@@ -33,7 +33,7 @@ public class LoginServlet extends HttpServlet {
 		user.setName(name);
 		user.setPwd(pwd);
 
-		// 防范一下(这里可用ajax在前台也防范一下)
+		// 防范一下(这里可用ajax在前台也防范一下啊)
 		if (name == null || name.trim().length() <= 0) {
 			out.println("用户名不能为空，请重新输入!");
 			out.println("<a href='"+path+"'>返回登录页</a><br/>");
